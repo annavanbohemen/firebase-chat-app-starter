@@ -7,7 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./scripts/firebaseConfig.js"></script>
     <script src="./scripts/chat-lib.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
   <header>
@@ -17,8 +17,8 @@
     <form onsubmit="return false">
       <label for="personname">Choose a username: </label>
       <input id='username' name='uname' type="text" placeholder="username">
-      <button id="adduser" onclick="ChatApp.createOrUpdateUser(document.getElementById('username').value, -1, submitUserName)">Add user</button>
-    </form>
+      <button id="adduser" class="button" onclick="ChatApp.createOrUpdateUser(document.getElementById('username').value, -1, submitUserName)">Add user</button>
+     </form>
   </div>
 
  <div class="container1">
