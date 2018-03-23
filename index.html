@@ -9,9 +9,28 @@
     <script src="./scripts/chat-lib.js"></script>
 </head>
 <body>
-    <h1>Put your HTML here</h1>
-    
-    <!-- Put your code in the chat.js file -->
+    <header>
+    <h1>Chat App</h1>
+  </header>
+
+  <div class="login-page">
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <button>login</button>
+    </form>
+  </div>
+
+    <div id='chatbox'></div>
+    <div id='active-users'></div>
+
+    <footer>
+      <form name="message" action="">
+       <input name="usermsg" type="text" id="usermsg" size="63" />
+       <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+   </form>
+    </footer>
+
+
     <script src="./scripts/chat.js"></script>
 </body>
 </html>
