@@ -13,23 +13,21 @@
     <h1>Chat App</h1>
   </header>
 
-    <div id='add-user'>
-      <ul id="name"></ul>
-      <div>
-        <input id="users" autocomplete="off" />
-        <button ng-click="send()">Add user</button>
-      </div>
-    </div>
+  <div class="login-page">
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <button>login</button>
+    </form>
+  </div>
 
-    <div id='message-content'></div>
+    <div id='chatbox'></div>
     <div id='active-users'></div>
 
     <footer>
-      <ul id="messages"></ul>
-      <div>
-       <input id="m" ng-model="message" autocomplete="off" />
-       <button ng-click="send()">Send Message</button>
-      </div>
+      <form name="message" action="">
+       <input name="usermsg" type="text" id="usermsg" size="63" />
+       <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+   </form>
     </footer>
 
 
