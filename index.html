@@ -14,11 +14,11 @@
     <h1>Chat App</h1>
   </header>
   <div id='user-add'>
-    <form onsubmit="submitUserName(); return false">
+    <form onsubmit="return false">
       <label for="personname">Choose a username: </label>
       <input id='username' name='uname' type="text" placeholder="username">
-      <button id="adduser" class="button">Add user</button>
-    </form>
+      <button id="adduser" class="button" onclick="ChatApp.createOrUpdateUser(document.getElementById('username').value, -1, submitUserName)">Add user</button>
+     </form>
   </div>
 
  <div class="container1">
@@ -47,6 +47,7 @@
     </footer>
 
 
-    <script src="./scripts/chat.js"></script>
+    <script src="./scripts/chat.js">
+    </script>
 </body>
 </html>
