@@ -29,6 +29,7 @@ form {
 
 .container1 {
   display: flex;
+  margin-bottom: 1%;
 }
 
 #chatbox {
@@ -52,7 +53,7 @@ footer {
   padding-top: 30px;
   padding-bottom: 15px;
   bottom: 0;
-  position: absolute;
+  position: relative;
   width: 100%;
   display: flex;
 }
