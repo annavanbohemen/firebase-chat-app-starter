@@ -14,10 +14,10 @@
     <h1>Chat App</h1>
   </header>
   <div id='user-add'>
-    <form onsubmit="submitUserName(); return false">
+    <form onsubmit="return false">
       <label for="personname">Choose a username: </label>
       <input id='username' name='uname' type="text" placeholder="username">
-      <button id="adduser">Add user</button>
+      <button id="adduser" onclick="ChatApp.createOrUpdateUser(document.getElementById('username').value, -1, submitUserName)">Add user</button>
     </form>
   </div>
 

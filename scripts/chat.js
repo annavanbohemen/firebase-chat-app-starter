@@ -1,7 +1,5 @@
-function submitUserName() {
+function submitUserName(userData) {
   var inputField = document.getElementById('username');
   var newUserName = inputField.value;
-  console.log(newUserName);
-  console.log('uklkj;lkj;lk');
-
-submitUserName();
+  console.log(userData);
+}
