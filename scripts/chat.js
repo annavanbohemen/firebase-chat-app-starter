@@ -1,6 +1,11 @@
 function submitUserName(userData) {
-  var inputField = document.getElementById('username');
-  var newUserName = inputField.value;
+  var user = userData.name;
+  console.log(userData.name);
+  var linkElement = document.getElementById('addusers');
+  linkElement.innerText = user
 
-  console.log(userData);
+  // var listItem = document.createElement('li');
+  // listItem.className = 'active-users';
+  //
+  //
 }

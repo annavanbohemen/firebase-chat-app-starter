@@ -17,8 +17,8 @@
     <form onsubmit="return false">
       <label for="personname">Choose a username: </label>
       <input id='username' name='uname' type="text" placeholder="username">
-      <button id="adduser" class="button" onclick="ChatApp.createOrUpdateUser(document.getElementById('username').value, -1, submitUserName)">Add user</button>
-     </form>
+      <button id="adduser" onclick="ChatApp.createOrUpdateUser(document.getElementById('username').value, -1, submitUserName)">Add user</button>
+    </form>
   </div>
 
  <div class="container1">
@@ -30,10 +30,10 @@
       </ul>
 
     </div>
-    <div id='active-users'>
+    <div class='active-users'>
 
       <ul>
-        <li>Online User 1</li>
+        <li id="addusers">Online User 1</li>
         <li>Online User 2</li>
       </ul>
 
