@@ -13,12 +13,11 @@
   <header>
     <h1>Chat App</h1>
   </header>
-
   <div id='user-add'>
-    <form>
+    <form onsubmit="submitUserName(); return false">
       <label for="personname">Choose a username: </label>
-      <input id='personname' name='uname' type="text" placeholder="username">
-      <button class="button">Add user</button>
+      <input id='username' name='uname' type="text" placeholder="username">
+      <button id="adduser">Add user</button>
     </form>
   </div>
 
