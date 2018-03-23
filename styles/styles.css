@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+
+header {
+    background-color: #b2d732;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+  text-shadow: 2px 2px #333;
+  font-size: 45px;
+}
+
+
+body {
+  font-family: "Fjalla One", sans-serif;
+}
+
+form {
+  margin-left: 40px;
+}
+
+#active-users {
+  margin-left: 40px;
+}
+
+.container1 {
+  display: flex;
+}
+
+#chatbox {
+  border: 1px solid #347b98;
+  flex-grow: 3;
+  font-size: 20px;
+  border-radius: 5px;
+  height: 50%;
+  margin-left: 40px;
+  background-color: #99bac7;
+;
+}
+
+#active-users {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #f0f7d4;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  display: flex;
+}
+
+  .button {
+    background-color: #347b98; /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+    font-family: "Fjalla One", sans-serif;
+}
+
+  #usermsg {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  #personname {
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+  }
