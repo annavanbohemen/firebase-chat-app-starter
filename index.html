@@ -9,9 +9,30 @@
     <script src="./scripts/chat-lib.js"></script>
 </head>
 <body>
-    <h1>Put your HTML here</h1>
-    
-    <!-- Put your code in the chat.js file -->
+    <header>
+    <h1>Chat App</h1>
+  </header>
+
+    <div id='add-user'>
+      <ul id="name"></ul>
+      <div>
+        <input id="users" autocomplete="off" />
+        <button ng-click="send()">Add user</button>
+      </div>
+    </div>
+
+    <div id='message-content'></div>
+    <div id='active-users'></div>
+
+    <footer>
+      <ul id="messages"></ul>
+      <div>
+       <input id="m" ng-model="message" autocomplete="off" />
+       <button ng-click="send()">Send Message</button>
+      </div>
+    </footer>
+
+
     <script src="./scripts/chat.js"></script>
 </body>
 </html>
