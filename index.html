@@ -7,9 +7,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./scripts/firebaseConfig.js"></script>
     <script src="./scripts/chat-lib.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
+  <header>
     <h1>Chat App</h1>
   </header>
 
@@ -17,31 +18,32 @@
     <form>
       <label for="personname">Choose a username: </label>
       <input id='personname' name='uname' type="text" placeholder="username">
-      <button>Add user</button>
+      <button class="button">Add user</button>
     </form>
   </div>
 
+ <div class="container1">
     <div id='chatbox'>
 
       <ul>
-        <li>Name1</li>
-        <li>Name2</li>
+        <li>Chat User 1</li>
+        <li>Chat User 2</li>
       </ul>
 
     </div>
     <div id='active-users'>
 
       <ul>
-        <li>Name1</li>
-        <li>Name2</li>
+        <li>Online User 1</li>
+        <li>Online User 2</li>
       </ul>
 
     </div>
-
+  </div>
     <footer>
       <form name="message" action="">
        <input name="usermsg" type="text" id="usermsg" size="63" />
-       <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+       <input name="submitmsg" class ="button" type="submit" value="Send" />
    </form>
     </footer>
 
