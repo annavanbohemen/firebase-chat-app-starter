@@ -45,7 +45,7 @@ function addMessage(type, id, data) {
     chatMessages.append(newContent);
   };
 
-  // first we check data.useName exists, because it was sometimes undefined
+  // first we check data.userName exists, because it was sometimes undefined
   // then we check if the  username already exists in  our list of usernames
   if (data.userName && activeUsers.indexOf(data.userName) < 0) {
     activeUsers.push(data.userName);
@@ -57,4 +57,18 @@ function addMessage(type, id, data) {
 function submitMessage() {
   var message = document.getElementById('usermsg').value;
   ChatApp.newMessage(name, message);
+  document.getElementById('usermsg').value = "";
 }
+
+
+// ChatApp.addMessageListener = function(handler, errHandler) {
+//   db
+//     .collection("messages")
+//     .orderBy("timestamp", "desc")
+//     .limit(ChatApp.fetchSize)
+//     .onSnapshot(function(snapshot) {
+//       snapshot.docChanges.reverse().forEach(function(docChange) {
+//         handler(docChange.type, docChange.doc.id, docChange.doc.data());
+//       });
+//     }, errHandler);
+// };
