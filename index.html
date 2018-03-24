@@ -38,7 +38,7 @@
     </div>
   </div>
     <footer>
-      <form onsubmit="ChatApp.newMessage(username, document.getElementById('usermsg').value); return false" name="message" >
+      <form onsubmit="submitMessage(); return false" name="message" >
        <input name="usermsg" type="text" id="usermsg" size="63" />
        <input name="submitmsg" class ="button" type="submit" value="Send" />
      </form>
