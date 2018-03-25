@@ -36,7 +36,7 @@ function messageHandler(changeType, messageId, messageData) {
         listItem.innerHTML = `<li style="color:${userData.color};">${messageData.userName}</li>`
         linkElement.appendChild(listItem);
 
-        activeUsers.push(userName);
+        activeUsers.push(messageData.userName);
       } else if (activeUsers.indexOf(messageData.userName) >= 0) {
         var chatbox = document.getElementById('chatbox');
         var p = document.createElement('p');
