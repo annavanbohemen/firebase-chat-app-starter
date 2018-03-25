@@ -20,14 +20,25 @@ function messageHandler(changeType, messageId, messageData) {
     // add the message to HTML with color if the user is not in activeUsers
     // otherwise only the message without the color
     function callbackGetUser(userData) {
-      if (activeUsers.indexOf(messageData.userName) < 0) {
-        // addUser(messageData.userName);
-        console.log(userData);
+        var userFound = false;
+      // it will loop activeUsers to get the username and user color
+      for (var i = 0; i < activeUsers.length; i++) {
+        var user = activeUsers[i];
 
-        var chatbox = document.getElementById('chatbox');
-        var p = document.createElement('p');
-        p.innerHTML = `<p style="color:${userData.color};">${messageData.userName}: ${messageData.text}</p>`;
-        chatbox.appendChild(p);
+        // user found in the activeUsers, copy to variable userFound
+        if (user.name === messageData.userName) {
+          userFound = true;
+          userData = user;
+          break;
+        }
+      }
+
+      var chatbox = document.getElementById('chatbox');
+      var p = document.createElement('p');
+      p.innerHTML = `<div style="color:${userData.color};">${messageData.userName}: ${messageData.text}</div>`;
+      chatbox.appendChild(p);
+
+      if(userFound === false) {
 
         // add user to the userlist li
         // and add user to activeUsers
@@ -36,12 +47,7 @@ function messageHandler(changeType, messageId, messageData) {
         listItem.innerHTML = `<li style="color:${userData.color};">${messageData.userName}</li>`
         linkElement.appendChild(listItem);
 
-        activeUsers.push(messageData.userName);
-      } else if (activeUsers.indexOf(messageData.userName) >= 0) {
-        var chatbox = document.getElementById('chatbox');
-        var p = document.createElement('p');
-        p.innerText = messageData.userName + ': ' + messageData.text;
-        chatbox.appendChild(p);
+        activeUsers.push({name: userData.name, color: userData.color});
       }
     }
   }
@@ -66,4 +72,5 @@ function parseUser() {
 function parseUserMessage() {
   var userMessage = document.getElementById('usermsg').value;
   ChatApp.newMessage(username, userMessage);
+  document.getElementById('usermsg').value = '';
 };

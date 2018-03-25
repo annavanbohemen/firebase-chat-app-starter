@@ -2,9 +2,9 @@
 
 
 header {
-    background-color: #b2d732;
-    padding: 20px;
-    margin-bottom: 30px;
+  background-color: #b2d732;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -25,6 +25,8 @@ form {
 
 #active-users {
   margin-left: 40px;
+  flex-grow: 1;
+  font-size: 16px;
 }
 
 .container1 {
@@ -34,17 +36,13 @@ form {
 #chatbox {
   border: 1px solid #347b98;
   flex-grow: 3;
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 5px;
   height: 50%;
   margin-left: 40px;
   background-color: #99bac7;
-;
-}
-
-#active-users {
-  flex-grow: 1;
-  font-size: 16px;
+  padding: 5px;
+  line-height: 50%;
 }
 
 footer {
@@ -57,27 +55,31 @@ footer {
   display: flex;
 }
 
-  .button {
-    background-color: #347b98; /* Green */
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 8px 13px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 20px;
-    font-family: "Fjalla One", sans-serif;
+.button {
+  background-color: #347b98; /* Green */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  font-family: "Fjalla One", sans-serif;
 }
 
-  #usermsg {
-    padding: 10px;
-    border-radius: 5px;
-  }
+#usermsg {
+  padding: 10px;
+  border-radius: 5px;
+}
 
-  #personname {
-    padding: 10px;
-    margin-left: 20px;
-    border-radius: 5px;
-  }
+#personname {
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
